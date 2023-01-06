@@ -26,3 +26,92 @@ h3 {
 ul {
   list-style: none;
 }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 90%;
+  height: 100%;
+  max-height: 700px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  background: #f0f0f0;
+}
+
+.bkg {
+  width: 100%;
+  height: 100%;
+  background: #a4a4a4;
+  background: linear-gradient(0deg, #797979, #494949 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-clip-path: url("#wrapMask");
+          clip-path: url("#wrapMask");
+}
+
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 16%;
+}
+
+.header svg {
+    width: 18px;
+    stroke: #f0f0f0;
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+}
+
+.header svg:nth-child(1){
+    transform: rotateZ(90deg);
+}
+
+.header div{
+    text-align: right;
+}
+
+.header div svg{
+    margin-left: 20px;
+}
+
+.panel{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.panel img#liberty{
+    width: 95%;
+    position: absolute;
+    z-index:10;
+    left: 50%;
+    bottom: -250px;
+    transform:translateX(-50%)
+}
+
+.panel h1#panel-h1{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 9;
+    top: 140px;
+    font-size:8rem;
+    left: 50%;
+    transform:translateX(-50%);
+}
