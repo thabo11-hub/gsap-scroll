@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&family=Oswald&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +8,14 @@
 body {
   height: 100vh;
   font-family: "Oswald", sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Bebas Neus", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   text-transform: uppercase;
   color: #f0f0f0;
   letter-spacing: 2px;
@@ -36,7 +35,7 @@ ul {
 
 .wrapper {
   width: 90%;
-  max-width: 90%;
+  max-width: 900px;
   height: 100%;
   max-height: 700px;
   overflow: hidden;
@@ -55,7 +54,7 @@ ul {
   left: 0;
   z-index: 1;
   -webkit-clip-path: url("#wrapMask");
-  clip-path: url("#wrapMask");
+          clip-path: url("#wrapMask");
 }
 
 .header {
@@ -68,7 +67,6 @@ ul {
   display: grid;
   grid-template-columns: 1fr 16%;
 }
-
 .header svg {
   width: 18px;
   stroke: #f0f0f0;
@@ -76,15 +74,12 @@ ul {
   fill: none;
   stroke-linecap: round;
 }
-
 .header svg:nth-child(1) {
   transform: rotateZ(90deg);
 }
-
 .header div {
   text-align: right;
 }
-
 .header div svg {
   margin-left: 20px;
 }
@@ -104,7 +99,6 @@ ul {
   bottom: -250px;
   transform: translateX(-50%);
 }
-
 .panel h1#panel-h1 {
   width: 100%;
   text-align: center;
