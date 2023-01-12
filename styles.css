@@ -54,7 +54,7 @@ ul {
   left: 0;
   z-index: 1;
   -webkit-clip-path: url("#wrapMask");
-          clip-path: url("#wrapMask");
+  clip-path: url("#wrapMask");
 }
 
 .header {
